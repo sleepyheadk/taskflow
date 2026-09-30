@@ -39,4 +39,14 @@ export const tasks = [
     priority: 'Средний',
     dueDate: '30 сентября',
  },
+  {
+    id: 6,
+    title: 'Выполнить практику 5 по алгоритмам',
+    project: 'Учеба',
+    status: 'Готово',
+    priority: 'Средний',
+    dueDate: '30 сентября',
+ },
+
+
 ];

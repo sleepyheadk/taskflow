@@ -23,7 +23,7 @@ button {
 }
 
 button:focus-visible {
-    outline: 3px solid rgba(79, 70, 229, 0.28);
+    outline: 3px solid rgba(15, 118, 110, 0.28);
     outline-offset: 2px;
 }
 
@@ -130,7 +130,7 @@ button:focus-visible {
 
 .eyebrow {
     margin: 0 0 6px;
-    color: #4f46e5;
+    color: #0f766e;
     font-weight: 800;
     font-size: 12px;
     letter-spacing: 0.08em;
@@ -165,13 +165,13 @@ h1 {
 }
 
 .primaryButton {
-    border: 1px solid #4f46e5;
-    background: #4f46e5;
+    border: 1px solid #0f766e;
+    background: #0f766e;
     color: white;
 }
 
 .primaryButton:hover {
-    background: #4338ca;
+    background: #0f766e;
 }
 
 .ghostButton {
@@ -268,7 +268,7 @@ h1 {
 }
 
 .status.progress {
-    color: #3730a3;
+    color: #0f766e;
     background: #eef2ff;
 }
 
@@ -313,6 +313,20 @@ h1 {
     font-size: 13px;
 }
 
+@media (max-width: 1240px) {
+    .statsGrid {
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+
+    .statCard {
+        grid-column: span 2;
+    }
+
+    .statCard:nth-child(n + 4) {
+        grid-column: span 3;
+    }
+}
+
 @media (max-width: 900px) {
     .appShell {
         grid-template-columns: 1fr;
@@ -333,6 +347,15 @@ h1 {
 
     .statsGrid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .statCard,
+    .statCard:nth-child(n + 4) {
+        grid-column: auto;
+    }
+
+    .statCard:last-child {
+        grid-column: 1 / -1;
     }
 }
 
