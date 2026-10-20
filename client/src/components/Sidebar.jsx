@@ -15,8 +15,8 @@ export default function Sidebar() {
                 <button className="menuItem" type="button">Проекты</button>
             </nav>
             <div className="sidebarNote">
-                <strong>Практика ПиРКЧИР</strong>
-                <span>Статический интерфейс на React</span>
+                <strong>Практика 2</strong>
+                <span>Состояние, формы и localStorage</span>
             </div>
         </aside>
     );
